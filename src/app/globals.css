@@ -1,0 +1,48 @@
+/* Import Tailwind's base styles */
+@tailwind base;
+/* Import Tailwind's component styles */
+@tailwind components;
+/* Import Tailwind's utility classes */
+@tailwind utilities;
+
+:root {
+  /* Example of custom CSS variables */
+  --primary-color: #3490dc;
+  --secondary-color: #ffed4a;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles */
+  body {
+    background-color: #1a202c; /* Dark background color */
+    color: #f7fafc; /* Light text color */
+  }
+}
+
+body {
+  font-family: sans-serif; /* Example global font */
+  background-color: #fff; /* Default light background */
+  color: #333; /* Default text color */
+}
+
+@layer utilities {
+  .text-balance {
+    text-align: justify;
+  }
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
